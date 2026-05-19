@@ -8,3 +8,18 @@ def home(request):
     context = {}
     templete = loader.get_template("index.html");
     return HttpResponse(templete.render(context, request))
+
+def about(request):
+    context = {}
+    templete = loader.get_template("aboutMe.html");
+    return HttpResponse(templete.render(context, request))
+
+def project(request):
+    context = {}
+    templete = loader.get_template("project.html");
+    return HttpResponse(templete.render(context, request))
+
+def contact(request):
+    context = {}
+    templete = loader.get_template("project.html");
+    return HttpResponse(templete.render(context, request))

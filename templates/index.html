@@ -10,26 +10,28 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
+    <!-- header -->
     <div class="header-content">
-        <a  class="logo"  href="index.html" ><strong> Yosselin Meza | Portfolio </strong></a>
+        <a  class="logo"  href="{% url 'home' %}" ><strong> Yosselin Meza | Portfolio </strong></a>
             <div class="btn-placement">
-                <a href="index.html" class="button-styles">Home</a>
+                <a href="{% url 'home' %}" class="button-styles">Home</a>
                 <span aria-hidden="true">|</span>
-                <a href="" class="button-styles">About Me</a>
+                <a href="{% url 'about' %}" class="button-styles">About Me</a>
                 <span aria-hidden="true">|</span>
-                <a href="" class="button-styles">Projects</a>
+                <a href="{% url 'project' %}" class="button-styles">Projects</a>
                 <span aria-hidden="true">|</span>
-                <a href="" class="button-styles" >Contact</a>
+                <a href="{% url 'contact' %}" class="button-styles" >Contact</a>
             </div>
     </div>
+    <!-- The end of header -->
 
     <div class="Hero-content">
         <img id="img-style" alt="Yosselin Meza" src="{% static 'image/headshot(2).jpg'%}">
         <div class="Description-content">
         <h2>My name is Yosselin Meza</h2>
         <div class="btn-placement-2">
-            <a href="index.html" class="button-styles-2">Get in Touch</a>
-            <a href="index.html" class="button-styles-2">View Projects</a>
+            <a href="{% url 'contact' %}" class="button-styles-2">Get in Touch</a>
+            <a href="{% url 'project' %}" class="button-styles-2">View Projects</a>
         </div>
             
             
