@@ -27,5 +27,52 @@
 
 
 
+
+
+
+
+    <!-- Footer of the page -->
+    <footer class="py-4 my-4 border-top">
+        <div class="container-fluid col-md-11 d-flex flex-wrap justify-content-between align-items-start">
+            <div class="d-flex align-items-center">
+                <a href="/" class="me-2 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+                        class="bi" width="30" height="24" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold mb-0">Portfolio</span>
+                    <span class="text-body-secondary small">© 2026 Yosselin Meza. All rights reserved.</span>
+                </div>
+            </div>
+            <div class="d-flex gap-5 text-center text-md-start mt-3 mt-md-0">
+                <div>
+                    <p class="fw-bold mb-2 text-center">Quick links</p>
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item mb-1"><a href="{% url 'home' %}"
+                                class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'about' %}"
+                                class="nav-link p-0 text-body-secondary">About Me</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'project' %}"
+                                class="nav-link p-0 text-body-secondary">Project</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="fw-bold mb-2 text-center">Connect</p>
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item mb-1"><a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"
+                                target="_blank" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
+                        <li class="nav-item mb-1"><a href="https://github.com/Yosselin993" target="_blank"
+                                class="nav-link p-0 text-body-secondary">GitHub</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'contact' %}"
+                                class="nav-link p-0 text-body-secondary">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+
+
 </body>
 </HTML>

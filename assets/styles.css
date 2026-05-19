@@ -48,8 +48,6 @@ body{
     margin: 20px 0;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 }
-.btn-placement-2{
-}
 
 .button-styles-2{
     display: inline-block;
@@ -65,4 +63,16 @@ body{
 .button-styles-2:hover{
     background-color: white;
     color: black;
+}
+
+
+
+/* Footer styles  */
+
+.footer{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 20px;
+
 }
