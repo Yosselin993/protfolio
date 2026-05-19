@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<HTML>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="header-content">
+        <a  class="logo"  href="index.html" ><strong> Yosselin Meza | Portfolio </strong></a>
+            <div class="btn-placement">
+                <a href="index.html" class="button-styles">Home</a>
+                <span aria-hidden="true">|</span>
+                <a href="" class="button-styles">About Me</a>
+                <span aria-hidden="true">|</span>
+                <a href="" class="button-styles">Projects</a>
+                <span aria-hidden="true">|</span>
+                <a href="" class="button-styles" >Contact</a>
+            </div>
+    </div>
+
+    <div class="Hero-content">
+        <img id="img-style" alt="Yosselin Meza" src="{% static 'image/headshot(2).jpg'%}">
+        <div class="Description-content">
+        <h2>My name is Yosselin Meza</h2>
+        <div class="btn-placement-2">
+            <a href="index.html" class="button-styles-2">Get in Touch</a>
+            <a href="index.html" class="button-styles-2">View Projects</a>
+        </div>
+            
+            
+        </div>
+
+
+    </div>
+
+
+</body>
+</HTML>
