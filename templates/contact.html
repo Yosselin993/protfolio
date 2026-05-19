@@ -2,49 +2,55 @@
 
 <!DOCTYPE html>
 <HTML>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
+
 <body>
     <!-- header -->
     <div class="header-content">
-        <a  class="logo"  href="{% url 'home' %}" ><strong> Yosselin Meza | Portfolio </strong></a>
-            <div class="btn-placement">
-                <a href="{% url 'home' %}" class="button-styles">Home</a>
-                <span aria-hidden="true">|</span>
-                <a href="{% url 'about' %}" class="button-styles">About Me</a>
-                <span aria-hidden="true">|</span>
-                <a href="{% url 'project' %}" class="button-styles">Projects</a>
-                <span aria-hidden="true">|</span>
-                <a href="{% url 'contact' %}" class="button-styles" >Contact</a>
-            </div>
+        <a class="logo" href="{% url 'home' %}"><strong> Yosselin Meza | Portfolio </strong></a>
+        <div class="btn-placement">
+            <a href="{% url 'home' %}" class="button-styles">Home</a>
+            <span aria-hidden="true">|</span>
+            <a href="{% url 'about' %}" class="button-styles">About Me</a>
+            <span aria-hidden="true">|</span>
+            <a href="{% url 'project' %}" class="button-styles">Projects</a>
+            <span aria-hidden="true">|</span>
+            <a href="{% url 'contact' %}" class="button-styles">Contact</a>
+        </div>
     </div>
     <!-- the end of header -->
 
     <!-- contact one -->
-     <div class="contact-one">
-        <h1>Contact Me</h1>
-        <p>Go ahead and submit your information below.</p>
-     </div>
+    <div class="contact-one mt-5">
+        <h1> <strong>Contact Me</strong></h1>
+        <p>Please fill out the form below with your information and message. I’ll review your message and get back to<br>you as soon as possible</p>
+    </div>
 
 
-
-
-
-
+    <div class="distance">
+        <form class="input-boxs" role="search"> 
+            <label for="name" class="mt-3"><strong>Name</strong></label>
+            <input id="name" class="form-control" type="text" placeholder="Type your full Name.">
+            
+            <label for="email" class="mt-3"><strong>Email</strong></label>
+            <input id="email" class="form-control" type="email" placeholder="Your.email@example.com">
+            
+            <label for="message" class="mt-3"><strong>Message</strong></label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+            
+            <input class="btn btn-primary" type="submit" value="Send Message">
+        </form>
+    </div>
     <!-- contact one ends -->
-
-
-
-
-
-
-
 
     <!-- Footer of the page -->
     <footer class="py-4 my-4 border-top">
@@ -71,16 +77,13 @@
                                 class="nav-link p-0 text-body-secondary">Project</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-icons">
                     <p class="fw-bold mb-2 text-center">Connect</p>
-                    <ul class="nav flex-column align-items-center">
-                        <li class="nav-item mb-1"><a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"
-                                target="_blank" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
-                        <li class="nav-item mb-1"><a href="https://github.com/Yosselin993" target="_blank"
-                                class="nav-link p-0 text-body-secondary">GitHub</a></li>
-                        <li class="nav-item mb-1"><a href="{% url 'contact' %}"
-                                class="nav-link p-0 text-body-secondary">Contact</a></li>
-                    </ul>
+                    <div class="icons">
+                        <a href="https://github.com/Yosselin993" target="_blank" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/github.png' %}" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"target="_blank" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/linkedin.png' %}" alt="LinkedIn"> </a>
+                        <a href="{% url 'contact' %}" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/email.png' %}" alt="Email"></a>
+                    </div>
                 </div>
             </div>
         </div>

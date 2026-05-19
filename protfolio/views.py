@@ -21,5 +21,5 @@ def project(request):
 
 def contact(request):
     context = {}
-    templete = loader.get_template("project.html");
+    templete = loader.get_template("contact.html");
     return HttpResponse(templete.render(context, request))

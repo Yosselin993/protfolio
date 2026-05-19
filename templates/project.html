@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
@@ -37,7 +37,7 @@
 
 
 
-    <!-- Footer of the page -->
+     <!-- Footer of the page -->
     <footer class="py-4 my-4 border-top">
         <div class="container-fluid col-md-11 d-flex flex-wrap justify-content-between align-items-start">
             <div class="d-flex align-items-center">
@@ -62,16 +62,13 @@
                                 class="nav-link p-0 text-body-secondary">Project</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-icons">
                     <p class="fw-bold mb-2 text-center">Connect</p>
-                    <ul class="nav flex-column align-items-center">
-                        <li class="nav-item mb-1"><a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"
-                                target="_blank" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
-                        <li class="nav-item mb-1"><a href="https://github.com/Yosselin993" target="_blank"
-                                class="nav-link p-0 text-body-secondary">GitHub</a></li>
-                        <li class="nav-item mb-1"><a href="{% url 'contact' %}"
-                                class="nav-link p-0 text-body-secondary">Contact</a></li>
-                    </ul>
+                    <div class="icons">
+                        <a href="https://github.com/Yosselin993" target="_blank" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/github.png' %}" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"target="_blank" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/linkedin.png' %}" alt="LinkedIn"> </a>
+                        <a href="{% url 'contact' %}" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/email.png' %}" alt="Email"></a>
+                    </div>
                 </div>
             </div>
         </div>

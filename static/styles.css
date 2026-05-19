@@ -77,13 +77,52 @@ body{
 
 }
 
+.footer-icons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
 
-/* contact styles */
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+
+
+/* contact styles sheet */
 .contact-one{
-    margin-top: 120px;
-    padding: 60px 20px;
-    text-align: center;
-    background: linear-gradient(90deg, #111 0%, #444 100%);
-    color: white;
-    border-radius: 10px;
+    color: black ;
+    padding-left: 25%;
+}
+
+.input-boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 1120px; 
+    padding-left: 25%;
+
+}
+
+/* Ensure the textarea matches Bootstrap's input styling */
+.input-boxs textarea {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+
+.distance{
+    margin-bottom: 5%;
+
 }

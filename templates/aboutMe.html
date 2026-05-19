@@ -56,16 +56,13 @@
                                 class="nav-link p-0 text-body-secondary">Project</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-icons">
                     <p class="fw-bold mb-2 text-center">Connect</p>
-                    <ul class="nav flex-column align-items-center">
-                        <li class="nav-item mb-1"><a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"
-                                target="_blank" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
-                        <li class="nav-item mb-1"><a href="https://github.com/Yosselin993" target="_blank"
-                                class="nav-link p-0 text-body-secondary">GitHub</a></li>
-                        <li class="nav-item mb-1"><a href="{% url 'contact' %}"
-                                class="nav-link p-0 text-body-secondary">Contact</a></li>
-                    </ul>
+                    <div class="icons">
+                        <a href="https://github.com/Yosselin993" target="_blank" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/github.png' %}" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/yosselin-meza-b12b18340"target="_blank" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/linkedin.png' %}" alt="LinkedIn"> </a>
+                        <a href="{% url 'contact' %}" class="nav-link p-0 text-body-secondary"><img class="icon" src="{% static 'image/email.png' %}" alt="Email"></a>
+                    </div>
                 </div>
             </div>
         </div>
