@@ -94,9 +94,6 @@ body{
     object-fit: contain;
 }
 
-
-
-
 /* contact styles sheet */
 .contact-one{
     color: black ;
@@ -124,5 +121,22 @@ body{
 
 .distance{
     margin-bottom: 5%;
+}
 
+
+/* project styles sheets */
+
+.position{
+    margin: 100px 100px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.img-position{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 }

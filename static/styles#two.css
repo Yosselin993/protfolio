@@ -1,0 +1,22 @@
+.info-box{
+    border: 1px solid black;
+    margin: 100px;
+    border-radius: 5px;
+}
+
+.text-position{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* better spacing */
+}
+
+.text-position p{
+    margin: 0; /* removes default paragraph spacing */
+}
+
+.img-size{
+    width: 30px;
+    height: auto;
+    display: block; /* prevents baseline alignment issues */
+    margin: 0; /* remove extra spacing */
+}
