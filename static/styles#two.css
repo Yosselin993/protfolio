@@ -1,22 +1,52 @@
 .info-box{
-    border: 1px solid black;
-    margin: 100px;
+    border: 1px solid rgb(210, 205, 205);
     border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    /* margin: 100px;
+    margin-top: 20pxx; */
+    margin: 10px 100px 20px 100px;
 }
 
 .text-position{
     display: flex;
     align-items: center;
-    gap: 10px; /* better spacing */
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .text-position p{
-    margin: 0; /* removes default paragraph spacing */
+    margin: 0;
+    font-size: 25px;
 }
 
 .img-size{
     width: 30px;
     height: auto;
-    display: block; /* prevents baseline alignment issues */
-    margin: 0; /* remove extra spacing */
+    display: block;
+    margin: 0;
+}
+
+
+.contact-text{
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+
+
+
+/* For text outside the information boxes */
+.text-position-two{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+
+}
+.text-position-two p{
+    margin: 0;
+    font-size: 30px;
 }
